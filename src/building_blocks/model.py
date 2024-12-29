@@ -125,7 +125,6 @@ def run_api(prompt, max_tokens_to_sample: int = 100000, temperature: float = 0):
     return plan
 
 def run_model(text_prompt, max_tokens_to_sample = None, temperature: float = 0):
-    print(text_prompt)
     llm = ChatGoogleGenerativeAI(
         model="gemini-2.0-flash-exp",
         temperature=temperature,
