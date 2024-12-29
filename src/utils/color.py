@@ -24,7 +24,7 @@ __version__ = "0.0.1"
 from colorama import init, Fore, Style
 import sys,time,random
 import sys
-import regex as re
+import re
 
 WWI_country_name_map = {'Country B': 'Britain', 'Country F': 'France', 'Country P': 'German Empire', 'Country A': 'Austria-Hungary', 'Country R': 'Russia', 'Country S': 'Serbia', 'Country U': 'USA', 'Country O': 'Ottoman Empire'}
 WWII_country_name_map = {'Country B': 'Britain', 'Country F': 'France', 'Country G': 'Germany', 'Country J': 'Japan', 'Country R': 'Russia', 'Country I': 'Italy', 'Country H': 'Hungary', 'Country A': 'United States', 'Country C': 'China', 'Country R': 'Russia'}

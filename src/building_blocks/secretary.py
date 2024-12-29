@@ -21,14 +21,14 @@ __date__ = "2023/11/28"
 __license__ = "Apache 2.0"
 __version__ = "0.0.1"
 
-from procoder.prompt import *
-from procoder.functional import (
-    collect_refnames,
-    format_multiple_prompts,
-    removed_submodules,
-    replace_prompt,
-)
-from procoder.functional import indent4 as indent
+# from procoder.prompt import *
+# from procoder.functional import (
+#     collect_refnames,
+#     format_multiple_prompts,
+#     removed_submodules,
+#     replace_prompt,
+# )
+# from procoder.functional import indent4 as indent
 import random
 import re
 

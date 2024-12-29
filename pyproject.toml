@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "waragent-langchain"
+version = "0.1.0"
+description = "War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars"
+authors = ["Kirushikesh DB"]
+license = "Apache License 2.0"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.3.13"
+python-dotenv = "^1.0.1"
+jupyter = "^1.1.1"
+langchain-google-genai = "^2.0.7"
+networkx = "^3.4.2"
+matplotlib = "^3.10.0"
+scikit-learn = "^1.6.0"
+colorama = "^0.4.6"
+roman = "^4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
