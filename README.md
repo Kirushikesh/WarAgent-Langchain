@@ -1,4 +1,4 @@
-# War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars
+# War and Peace (WarAgent): Large Language Model-based Multi-Agent Simulation of World Wars using Langchain
 
 <a href='https://arxiv.org/abs/2311.17227'><img src='https://img.shields.io/badge/Paper-PDF-red'></a> 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/agiresearch/WarAgent/blob/main/LICENSE)
@@ -33,14 +33,13 @@ pip install -r requirements.txt
 ```
 
 ### Set up API keys
-If you want to use OpenAI model as base LLM:
+Currently the code uses Gemini Flash-2.0 so use your gemini api key
 ```
-export OPENAI_API_KEY=your_openai_api_key
+export GOOGLE_API_KEY=your_gemini_api_key
 ```
-If you want to use Claude model as base:
-```
-export CLAUDE_API_KEY=your_claude_api_key
-```
+
+But [langchain](https://python.langchain.com/docs/concepts/chat_models/) can be integrated with hundreads of LLM providers and models so feel free to update the underlying model in `WarAgent-Langchain/src/building_blocks/model.py` **run_model** function with corresponding LLM.
+
 ### Run WarAgent simulation
 Currently, WarAgent supports GPT-4 and Claude-2, two of the strongest large language models. The default choice is GPT-4.
 
@@ -60,7 +59,7 @@ python main.py --model 'your model choice: {claude-2, gpt-4}' --scenario WWI --p
 ```
 python main.py --model gpt-4 --scenario WWI --present_thought_process
 ```
-link to [video](https://drive.google.com/file/d/1-0dh0Un72LhswMTiPsYn1xTb12xwjy08/view?usp=sharing) with a 5-minute demo using the above command
+link to OG repo [video](https://drive.google.com/file/d/1-0dh0Un72LhswMTiPsYn1xTb12xwjy08/view?usp=sharing) with a 5-minute demo using the above command
 
 
 ## News
